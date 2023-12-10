@@ -1,0 +1,129 @@
+@font-face{
+    font-family: 'holaWeekend';
+    src: url(./assets/Holla\ Weekend.otf);
+}
+@font-face{
+    font-family: 'gilroy';
+    src: url(./assets/Gilroy-Medium.e7e7c091.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'holaWeekend';
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h3{
+    font-size: 5vw;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+p{
+    font-family: 'gilroy';
+    font-weight: 600;
+    letter-spacing: .8px;
+    margin-bottom: 10px;
+
+}
+.container{
+    background-color: #F1EAFF;
+    padding: 10px;
+    height: 40%;
+    width: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: .8px solid #aaebff;
+    box-shadow: 0px 3px 8px #F2FFE9;
+}
+button.boxes{
+    all: unset;
+    text-align: center;
+    height: 12vh;
+    width: 6vw;
+    border-bottom: 1.4px solid black;
+    border-right: 1.4px solid black;
+    background-color: #d6baff;
+}
+
+button.boxes:nth-child(3){
+    border-right: none;
+}
+button.boxes:nth-child(6){
+    border-right: none;
+}
+button.boxes:nth-child(7){
+    border-bottom: none;
+}
+button.boxes:nth-child(8){
+    border-bottom: none;
+}
+button.boxes:nth-child(9){
+    border-right: none;
+    border-bottom: none;
+}
+.msg-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all .3s ease;
+
+}
+.msg-container p:nth-child(1){
+    color: #9BB8CD;
+    font-size: 4vw;
+    text-align: center;
+}
+.msg-container p:nth-child(2){
+    border: .5px solid #d6baff6a;
+    background-color: #C5FFF8;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+.msg-container button{
+    /* all: unset; */
+    font-family: 'gilroy';
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: .9px;
+    padding: 5px 15px;
+    border-radius: 15px;
+    border: none;
+    border: .8px solid #FFC0D9;
+    transition: all .1s ease;
+
+}
+.msg-container button:active{
+    scale: .95;
+    background-color: #ffc0d975;
+}
+
+@media (max-width: 600px) {
+    .container {
+        height: 50%;
+        width: 80%;
+    }
+    h3{
+        font-size: 10vw;
+    }
+    button.boxes{
+        height: 9vh;
+        width: 18vw;
+    }
+    
+    .msg-container p:nth-child(1){
+        font-size: 8vw;
+    }
+
+}
